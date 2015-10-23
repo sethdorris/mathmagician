@@ -11,10 +11,12 @@ namespace Mathmagician
     {
         //By default, first set to 0 if not explicitly defined
         protected int first;
+        protected int increment;
 
         public NaturalNumbers()
         {
             first = 1;
+            increment = 1;
         }
 
         public int GetFirst()
@@ -24,7 +26,7 @@ namespace Mathmagician
 
         public virtual int GetNext(int x)
         {
-            return x + 1;
+            return x + increment;
         }
 
         public int[] GetSequence()
