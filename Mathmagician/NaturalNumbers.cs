@@ -10,7 +10,7 @@ namespace Mathmagician
     public class NaturalNumbers //By default every class has a constructor that takes no arguments
     {
         //By default, first set to 0 if not explicitly defined
-        private int first;
+        protected int first;
 
         public NaturalNumbers()
         {
@@ -22,7 +22,7 @@ namespace Mathmagician
             return first;
         }
 
-        public int GetNext(int x)
+        public virtual int GetNext(int x)
         {
             return x + 1;
         }
