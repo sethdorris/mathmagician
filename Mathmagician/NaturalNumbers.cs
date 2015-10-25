@@ -29,12 +29,12 @@ namespace Mathmagician
             return x + increment;
         }
 
-        public int[] GetSequence()
+        public virtual int[] GetSequence()
         {
             return GetSequence(10);
         }
 
-        public int[] GetSequence(int length)
+        public virtual int[] GetSequence(int length)
         {
             List<int> output = new List<int>();
             output.Add(GetFirst());
